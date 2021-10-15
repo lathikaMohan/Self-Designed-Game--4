@@ -305,8 +305,26 @@ function draw() {
 
   }); //mental ability getting closed
 
+  //Riddles starts here
+  riddles.mousePressed(() => {
+    mentalAbility.hide();
+    generalKnowledge.hide();
+    riddles.hide();
+    puzzles.hide();
+    funAndGames.hide();
+    title.hide();
+
+    title2 = createElement('h4')
+    title2.html("Riddles ");
+    title2.position(550, 100);
+
+    level3 = createButton('EASY');
+    level3 .position(550, 330);
+
+    level4= createButton('HARD');
+    level4.position(550, 380);
 
 
-  
+  //Riddles ends here
 
 }
